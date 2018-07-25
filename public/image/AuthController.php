@@ -68,7 +68,7 @@ class AuthController extends Controller
         ]);
     }
     public function getLogin(){
-        return View('login3');
+        return View('login2');
     }
     public function backLogin(){
         return redirect('login');

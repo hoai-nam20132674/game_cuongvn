@@ -36,9 +36,9 @@
                                 <td>{{$us->name}}</td>
                                 <td>{{$us->sdt}}</td>
                                 @if($us->phanthuong == $us->g500k)
-                                	<td>Giảm giá 500k</td>
+                                	<td>Voucher giảm giá Vertu 2 triệu</td>
                                 @elseif($us->phanthuong == $us->g200k)
-                                	<td>Miễn phí giao hàng</td>
+                                	<td>Voucher giảm giá 200k</td>
                                 @elseif($us->phanthuong == $us->baoda)
                                 	<td>Bao da</td>
                                 @elseif($us->phanthuong == $us->cocsac)
@@ -48,7 +48,7 @@
                                 @elseif($us->phanthuong == $us->mockhoa)
                                 	<td>Móc khóa rồng</td>
                                 @elseif($us->phanthuong == $us->freeship)
-                                	<td>Miễn phí giao hàng</td>
+                                	<td>Sạc oto</td>
                                 @elseif($us->phanthuong == $us->goodluck)
                                 	<td>Chúc may mắn lần sau</td>
                                 @else
@@ -68,6 +68,9 @@
                                 <td class="center"><i class="fa fa-trash-o  fa-fw"></i><a href="#"> Delete</a></td>
                                 <td class="center"><i class="fa fa-pencil fa-fw"></i> <a href="#">Edit</a></td>
                             </tr>
+                            <?php
+                                $i++;
+                            ?>
                             @endforeach
                         </tbody>
                     </table>
